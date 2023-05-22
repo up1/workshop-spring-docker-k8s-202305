@@ -9,3 +9,14 @@
 ```
 $docker compose build
 ```
+
+3. Run container
+```
+$docker compose up -d
+$docker-compose ps
+```
+
+4. Remove all containers
+```
+$docker compose down
+```
