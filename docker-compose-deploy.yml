@@ -1,9 +1,6 @@
 version: "3"
 services:
   service1:
-    build:
-      context: ./hello
-      dockerfile: Dockerfile_multi_stage
     image: somkiat/demo:4.0
     ports:
       - "8888:8080"
