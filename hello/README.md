@@ -26,3 +26,9 @@ Test API :: http://localhost:9999/hello/somkiat
 $docker image build -t demo:2.0 -f Dockerfile_multi_stage  .
 $docker image ls
 ```
+
+## Build image from JAR file
+```
+$mvnw package
+$docker image build -t demo:3.0 -f Dockerfile_jar .
+```
