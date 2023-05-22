@@ -7,3 +7,6 @@ services:
     image: somkiat/demo:4.0
     ports:
       - "8888:8080"
+      
+  demo_docker:
+    build: ./docker
