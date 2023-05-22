@@ -5,7 +5,7 @@ public class HelloResponse {
     private String message;
 
     public HelloResponse(String name) {
-        this.message = "Hello " + name;
+        this.message = "Hello ... " + name;
     }
 
     public String getMessage() {
