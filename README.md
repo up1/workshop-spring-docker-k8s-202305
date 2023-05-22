@@ -52,3 +52,8 @@ overall progress: 5 out of 5 tasks
 5/5: running   
 verify: Service converged
 ```
+
+Leave from Docker swarm
+```
+$docker swarm leave --force
+```
