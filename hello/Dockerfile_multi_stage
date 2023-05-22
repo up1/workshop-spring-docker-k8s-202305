@@ -1,0 +1,10 @@
+FROM eclipse-temurin:17.0.7_7-jdk-focal as step1
+WORKDIR /app
+COPY . .
+RUN ./mvnw package
+
+FROM eclipse-temurin:17.0.7_7-jre-focal
+WORKDIR /abc
+COPY --from=step1  /app/target/demo.jar ./xyz.jar
+CMD ["java", "-jar", "xyz.jar"]
+

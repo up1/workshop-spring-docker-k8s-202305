@@ -19,3 +19,10 @@ $docker container run -d -p 9999:8080 demo:1.0
 ```
 
 Test API :: http://localhost:9999/hello/somkiat
+
+
+## Build image with Multi-stage build
+```
+$docker image build -t demo:2.0 -f Dockerfile_multi_stage  .
+$docker image ls
+```
