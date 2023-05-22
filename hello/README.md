@@ -17,3 +17,5 @@ $docker image ls
 
 $docker container run -d -p 9999:8080 demo:1.0
 ```
+
+Test API :: http://localhost:9999/hello/somkiat
