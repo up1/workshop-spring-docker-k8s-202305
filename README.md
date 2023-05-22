@@ -20,3 +20,13 @@ $docker-compose ps
 ```
 $docker compose down
 ```
+
+
+## Working with Docker Swarm
+
+Create a cluster
+```
+$docker swarm init
+
+$docker node ls
+```
