@@ -8,3 +8,8 @@ services:
     ports:
       - "8888:8080"
 
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+
