@@ -32,3 +32,12 @@ $docker image ls
 $mvnw package
 $docker image build -t demo:3.0 -f Dockerfile_jar .
 ```
+
+## Build with GraalVM support
+```
+// build binary
+$mvnw -Pnative native:compile
+
+// Build image
+$mvnw -Pnative spring-boot:build-image
+```
