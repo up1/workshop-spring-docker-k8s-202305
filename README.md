@@ -57,3 +57,6 @@ Leave from Docker swarm
 ```
 $docker swarm leave --force
 ```
+
+## Working with Kubernetes
+* [Deployment with K8s + miniKube](https://github.com/up1/workshop-spring-docker-k8s-202305/wiki/Deployment-with-K8S)
