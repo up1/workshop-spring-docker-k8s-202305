@@ -4,4 +4,16 @@ services:
     image: somkiat/demo:4.0
     ports:
       - "8888:8080"
+    healthcheck:
+      test: "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1"
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+  
+  service2:
+    image: nginx
+    depends_on:
+      service1:
+        condition: service_healthy
 
