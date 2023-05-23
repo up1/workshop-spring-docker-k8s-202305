@@ -15,3 +15,5 @@ spec:
                 name: hello-service
                 port:
                   number: 8080
+
+# /service1/hello/somkiat  => /hello/somkiat

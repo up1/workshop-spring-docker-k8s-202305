@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: springboot-container
-        image: somkiat/demo:2.0
+        image: somkiat/demo:4.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -25,10 +25,10 @@ spec:
           limits:
             cpu: 300m #30%
             memory: 500Mi
-        # readinessProbe:
-        #   httpGet:
-        #     path: /actuator/health
-        #     port: 8080
-        #   initialDelaySeconds: 10
-        #   failureThreshold: 30
-        #   periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 10
+          failureThreshold: 30
+          periodSeconds: 5
